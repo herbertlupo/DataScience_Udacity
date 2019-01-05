@@ -65,7 +65,7 @@ def predictions(weather_turnstile):
     features['ones'] = np.ones(m)
 # normalizacao
     features, mu, sigma = normalize_features(features)
-    features['ones'] = np.ones(m) # Add a column of 1s (y intercept)
+    features['ones'] = np.ones(m)
 # alvos
     values = dataframe['ENTRIESn_hourly']
 # OLS
